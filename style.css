@@ -1,7 +1,6 @@
 :root{
     font-family: sans-serif;
     background-color: #181818;
-    background-image: url("");
     background-size: 100%;
     color: white;
     text-align: center;
@@ -17,8 +16,8 @@ canvas{
 }
 
 .box {
-  height: 700px;
-  width: 60%;
+  height: 750px;
+  width: 70%;
   min-width: 560px;
   top: 50%;
   left: 50%;
@@ -26,7 +25,7 @@ canvas{
   transform: translate(-50%,-50%);
   border: 2px solid rgba(75, 75, 75, 0.7);
   border-radius: 20px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
 }
 
 .projects{
