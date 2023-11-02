@@ -1,0 +1,69 @@
+:root{
+    font-family: sans-serif;
+    background-color: #181818;
+    background-image: url("");
+    background-size: 100%;
+    color: white;
+    text-align: center;
+}
+
+canvas{
+  height:100vh;
+  background-color:#181818;
+}
+
+.link{
+  color: #5cbdaa;
+}
+
+.box {
+  height: 700px;
+  width: 60%;
+  min-width: 560px;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%,-50%);
+  border: 2px solid rgba(75, 75, 75, 0.7);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+}
+
+.projects{
+  line-height: 20px;
+}
+
+.bar {
+    overflow: hidden;
+}
+.bar a.active {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    animation: glow 5s ease-in-out infinite alternate;
+    
+}
+
+.bar a:hover {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+.bar a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    }
+    
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+    }
+}
