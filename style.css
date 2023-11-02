@@ -7,8 +7,23 @@
 }
 
 canvas{
-  height:100vh;
+  height:98vh;
   background-color:#181818;
+}
+
+.imgb{
+  max-width:60%;
+  max-height:60%;
+  border-radius: 20px;
+}
+
+.download {
+  text-decoration: none;
+  background-color: #181818;
+  color: #5cbdaa;
+  padding: 5px 6px 5px 6px;
+  border-radius: 20px;
+  border: 1px solid #5cbdaa;
 }
 
 .link{
@@ -16,7 +31,7 @@ canvas{
 }
 
 .box {
-  height: 750px;
+  height: 800px;
   width: 70%;
   min-width: 560px;
   top: 50%;
@@ -26,6 +41,8 @@ canvas{
   border: 2px solid rgba(75, 75, 75, 0.7);
   border-radius: 20px;
   backdrop-filter: blur(15px);
+  scrollbar-width: thin;
+  overflow-y: auto;
 }
 
 .projects{
@@ -55,6 +72,24 @@ canvas{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
+}
+
+.box::-webkit-scrollbar-button {
+  height: 10px;
+}
+
+.box::-webkit-scrollbar {
+  width: 10px;
+}
+
+.box::-webkit-scrollbar-track {
+  background-color: #ffffff00;
+  border-radius: 100px;
+}
+
+.box::-webkit-scrollbar-thumb {
+  background-color: #5cbdaa;
+  border-radius: 100px;
 }
 
 @-webkit-keyframes glow {
